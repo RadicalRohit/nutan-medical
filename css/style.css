@@ -2,8 +2,10 @@ body{
     background-color: rgb(255, 255, 255);
     font-family: 'Outfit', sans-serif;
     margin: 0;
-    padding: 2px;
+    padding: 0;
     font-size: large;
+    position: relative;
+
 }
 
 h2{
@@ -38,5 +40,5 @@ section{
     background-color: #f0f0f0; 
     padding: 30px; 
     border-radius: 10px; 
-    margin-top: 2em;
+    margin-top: 6em;
 }
