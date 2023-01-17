@@ -12,154 +12,108 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <style>
-        body{
-            background-color: rgb(255, 255, 255);
-            font-family: 'Outfit', sans-serif;
-            margin: auto;
-            padding: 2px;
-        }
-
-        h2{
-
-            color:#0082CA;
-            font-size: 30px;
-            font-weight: 400;
-
-
-        }
-        h3{
-
-            color:#0082CA;
-            font-size: 16px;
-            font-weight: 900;
-
-            }
-        p{
-            
-            color: rgb(0, 0, 0);
-            font-size: 16px;
-            font-weight: 300;
-
-            line-height: 140%;
-            margin: 10px;
-
-        }
-
-        a{
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            font-size: 20px;
-            font-weight: 900;
-            padding: 10px;
-        }
-        a:hover{
-            background-color: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-        }
-    </style>
+    <!-- link style.css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- a tag for phone -->
+
 
     <style>
-        nav{
-            background-color: rgb(255, 255, 255);
-
-
+        body{
+            position: relative;
         }
-        nav a{
-            background-color: rgb(236, 236, 236);
+        .sub-menu{
+            padding: 1em;
+            display: block;
+        }
+        .sub-menu > a{
+            text-decoration: none;
 
-            padding: 6px 20px;
-            margin: 2px;
+            
+            color: rgb(64, 64, 64);
+            font-size: 15px;
+            font-weight: 300;
+
+            line-height: 35px;
+            
+
+            padding: 5px 20px;
+            margin: 0 5px;
 
             border-radius: 50px;
-            border: 1px solid rgb(0, 0, 0);
-
-            font-size: 10px;
-            line-height: 40px;
-            text-transform: uppercase;
-            font-weight: 300;
-            letter-spacing: 1px;
-            color: rgb(0, 0, 0);
 
         }
-        nav a:hover{
-            background-color: rgb(234, 234, 234);
-            color: rgb(0, 0, 0);
-        }
-    </style>
-
-    <nav>
-
-            <a style="background-color: aquamarine;" href="https://api.whatsapp.com/send?phone=9422209741">  WhatsApp  </a> 
-            <a href="tel:9422209741"> 📞 1</a>
-            
-            <a href="tel:0240-2334709"> ☎️ 1</a>
-            <a href="tel:0240-2354841"> ☎️ 2</a>
-    
-            
-            <a href="https://www.google.com/search?q=nutan+medical+aurangabad&oq=nutan+medical+aur&aqs=chrome.1.69i57j33i160.12783j0j7&sourceid=chrome&ie=UTF-8#" target="_blank"> 📍Directions </a>
-    
-
-
-                <!-- logo -->
-    <style>
-        .logo{
-            margin: auto;
-            padding: 10px;
-            display: grid;
-            grid-template-columns: 0.4fr 1fr;
-            max-width: fit-content;
-            align-items: center;
-
+        .sub-menu > a:hover{
+            background-color: #dadada;
 
         }
     </style>
-
-    <div class="logo">
-        <div>
-            <img src="images/logo assets/nutan medical logo.svg" style=" width: 230px" alt="Nutan Pharma Logo" >
-        </div>
+    <nav class="sub-menu">
 
 
-    </div>
+        <a style="background-color: aquamarine;" href="https://api.whatsapp.com/send?phone=9422209741">   WhatsApp 💬 </a> 
+        <a href="https://www.google.com/search?q=nutan+medical+aurangabad&oq=nutan+medical+aur&aqs=chrome.1.69i57j33i160.12783j0j7&sourceid=chrome&ie=UTF-8#" target="_blank"> 📍Directions </a>
+        <a href="tel:9422209741"> 📞 9422209741</a>
+        
+        <a href="tel:0240-2334709"> ☎️ 0240-2334709</a>
+        <a href="tel:0240-2354841"> ☎️ 0240-2354841</a>
+
+        
+
     
     </nav>
 
-
-
-    <main>
-
-    
-
+    <a href="./index.html">
+        <img src="images/logo assets/nutan medical logo.svg" style=" width: 280px" alt="Nutan medical and Wholesale agencies Logo" >
+    </a>
 
 
 
-    <!-- style segment -->
-    <style>
-        .segment{
+    <img
+        class="bg-img-of-medicines"
+        style="
+
             margin: 0;
             padding: 0;
-        }
-        .segment li{
-            display: inline-block;
-            background-color: #ebebeb;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            max-width: 300px;
 
-            border-radius: 50px;
-            font-size: 13px;
-            line-height: 30px;
-            text-transform: uppercase;
-            font-weight: 300;
-            letter-spacing: 1px;
-            color: rgb(0, 0, 0);
-            padding: 0 20px;
-            margin: 5px;
 
+        "
+    src="./images/medicines/medicines bg for nutan.jpg" alt="" srcset="">
+
+
+    <!-- if display sixe is 500px dont show img -->
+    <style>
+        @media screen and (max-width: 700px){
+            .bg-img-of-medicines {
+                display: none;
+            }
         }   
     </style>
+
+
+
+
+    <style>
+        .page{
+            margin: 2em;
+        }
+        .page >p{
+            max-width: 900px;
+        }
+        .page >p > b{
+            font-weight: 500;
+        }
+    </style>
+
+<main class="page">
+
+
 
     <h2>We Deal In</h2>
     <ul class="segment">
@@ -174,41 +128,126 @@
 
 
 
-
-    <!-- image gallery -->
-
     <style>
-        .gallery img{
-            width: 100px;
-            margin: 10px;
+        .medicines{
+            display: inline-block;
 
-            border-radius: 5px;
-            padding: 5px;
+            padding: 10px;
+            justify-content: space-around;
+            align-items: center;
         }
-        .gallery img:hover{
+        .medicines img{
+            width: 200px;
+
+            margin: 10px;
+            padding: 10px;
+        }
+        .medicines img:hover{
             scale: 1.7;
         }
-        
     </style>
-    <div class="gallery">
+    <div class="medicines">
 
-        <img src="images/ALBUREL.png" alt="">
-        <img src="images/anti-snake-serum.jpg" alt="">
-        <img src="images/aprecap-125.jpg" alt="">
-        <img src="images/canmab-440-mg-500x500.jpg" alt="">
-        <img src="images/crizalk-capsules.jpg" alt="">
-        <img src="images/IMMUNOREL.jpg" alt="">
-        <img src="images/INLYTA 5MG.jpeg" alt="">
+
+    <img src="./images/medicines/640px-Karboplatin_kalbemed.jpg" alt="" srcset="">
+    <img src="./images/medicines/IMMUNOREL.jpg" alt="" srcset="">
+    <img src="./images/medicines/INLYTA 5MG.jpeg" alt="" srcset="">
+    <img src="./images/medicines/MIRCERA.jpg" alt="" srcset="">
+    <img src="./images/medicines/Mitotax-250mg-Injection.jpg" alt="" srcset="">
+    <img src="./images/medicines/PALBACE.jpg" alt="" srcset="">
+    <img src="./images/medicines/PERJETA.jpg" alt="" srcset="">
+    <img src="./images/medicines/Reditux-injection.jpg" alt="" srcset="">
+    <img src="./images/medicines/Roche-Kadcyla-trastuzumab-emtansine-cancer.jpg" alt="" srcset="">
+    <img src="./images/medicines/SURVANTA.png" alt="" srcset="">
+    <img src="./images/medicines/VEENAT 400MG.jpg" alt="" srcset="">
+    <img src="./images/medicines/aprecap-125.jpg" alt="" srcset="">
+    <img src="./images/medicines/canmab-440-mg-500x500.jpg" alt="" srcset="">
+    <img src="./images/medicines/crizalk-capsules.jpg" alt="" srcset="">
+    <img src="./images/medicines/human-albumin-20-100ml-500x500-1.jpg" alt="" srcset="">
+    <img src="./images/medicines/palbace-tablets-500x500.png" alt="" srcset="">
+    <img src="./images/medicines/pazopanib-tabets-500x500.webp" alt="" srcset="">
+    <img src="./images/medicines/reditux-injection.jpg" alt="" srcset="">
+    <img src="./images/medicines/revolade-50mg-tablet.jpg" alt="" srcset="">
+    <img src="./images/medicines/snake-venom-antiserum-500x500.png" alt="" srcset="">
+    <img src="./images/medicines/sutent-500x500.webp" alt="" srcset="">
+    <img src="./images/medicines/tecentriq.jpg" alt="" srcset="">
+
 
 
     </div>
-    
-    
-
-
 
     
+
+    
+
+    <h2>About Us</h2>
+        <p>
+            Founded in  1990, today Nutan is a reputable name in the pharmaceutical industry. Started with a single outlet, Nutan has made its presence felt across India with its unparallel service and customer centric approach. Today, we are authorised stockist/distributor for more than <b>85 agencies and still growing</b>.
+
+        </p>
+
+
+    <h3>Our Mission</h3>
+
+        <p>            
+            The very thought behind the name “ Nutan Medical “ is to bring to the city all in one stop for life saving and anti cancer drugs. We understand the hustle and the sufferings of the patients and want to provide them an outlet where we can care , support all their needs.
+        </p>
         
+    <h3>Our Vision </h3>
+        <p>
+            To serve <i>private hospital, government hospitals, other retails pharmacies</i>. To provide costly and imported medicines at a low price directly to patients and help serve the needy across india.    
+        </p>
+
+    
+
+
+
+
+<!-- style the class .medical-brands with width-max 200px, display inlineflex -->
+    <style>
+        .medical-brands{
+            display: inline-block;
+
+            padding: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .medical-brands img{
+            width: 100px;
+
+            margin: 10px;
+            padding: 10px;
+        }
+        .medical-brands img:hover{
+            scale: 1.5;
+        }
+    </style>
+    <div class="medical-brands">
+        <img src="./images/brands/Abbott.png" alt="" srcset="">
+        <img src="./images/brands/Boehringer Ingelheim Logo.png" alt="" srcset="">
+        <img src="./images/brands/Bharat biotech.png" alt="" srcset="">
+        <img src="./images/brands/Bharat serum & Vaccines limited.png" alt="" srcset="">
+        <img src="./images/brands/CIPLA.png" alt="" srcset="">
+        <img src="./images/brands/Dr.Reddy's Laboratories.png" alt="" srcset="">
+        <img src="./images/brands/Eli-Lilly.png" alt="" srcset="">
+        <img src="./images/brands/Ferring pHARMACEUTICALS.png" alt="" srcset="">
+        <img src="./images/brands/FRESENIUS KABI.png" alt="" srcset="">
+        <img src="./images/brands/Merck pHARMA.png" alt="" srcset="">
+        <img src="./images/brands/natco-pharma.png" alt="" srcset="">
+        <img src="./images/brands/Neon labortaries.png" alt="" srcset="">
+        <img src="./images/brands/pfizer.png" alt="" srcset="">
+        <img src="./images/brands/RELIANCE PHARMA.png" alt="" srcset="">
+        <img src="./images/brands/Roche India.png" alt="" srcset="">
+        <img src="./images/brands/Samarth life sciences.png" alt="" srcset="">
+        <img src="./images/brands/Sun-Pharma.png" alt="" srcset="">
+        <img src="./images/brands/Zydus cadila.png" alt="" srcset="">
+        <img src="./images/brands/AstraZeneca.png" alt="" srcset="">
+        <img src="./images/brands/Novartis India.png" alt="" srcset="">
+
+
+    </div>
+
+
 
 
 
